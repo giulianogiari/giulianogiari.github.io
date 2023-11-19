@@ -1,28 +1,71 @@
+.dark-mode {
+  --background-color: #353535;
+  --text-color: #D9D9D9;
+  --footer-background-color: #3c6e71;
+  --footer-text-color: #353535;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial', Helvetica;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-header {
-  background-color: #333;
-  color: #fff;
+.about {
+  display: flex; /* Use flexbox for a responsive layout */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Align items horizontally */
+  flex-direction: column; /* Stack items vertically */
   text-align: center;
-  padding: 40px;
+  margin: 0 50px; /* Add some right margin to text */
+  font-family: 'Arial', Helvetica;
 }
+
+.profile {
+  display: flex; /* Use flexbox */
+  flex-direction: horizontal; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+.profile-image img {
+  width: 200px; /* Set a default image width */
+  height: 200px;  /* Set a default image height */
+  margin-right: 30px; /* Add some right margin to images */
+  width: 300px; /* Set a default image width */
+  height: 300px;  /* Set a default image height */
+  border-radius: 50%; /* Make images circular */
+  margin: 0 50px;
+}
+.profile-links img {
+  justify-content: space-between; /* Distribute space evenly between the icons */
+}
+
+.text-container {
+  text-align: center;   /* Center text */
+  font-size: 20px;
+  margin: 0 25px; /* Add some right margin to text */
+  font-family: 'Arial', Helvetica;
+}
+
 
 section {
   padding: 60px;
 }
 
-h2 {
-  color: #333;
+nav ul a {
+  list-style-type: none; /* Remove bullets from all nav elements */
+  color: #353535;
+  text-decoration: none; /* Remove underline */
+  text-align: center;
+  padding: 0; /* Remove padding */
+  margin-right: 20px;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
   text-align: center;
   padding: 10px;
   position: fixed;
