@@ -1,0 +1,43 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event {
+    width: 80%; /* Adjust this value as needed */
+}
+
+.sidebar {
+    position: fixed; /* Make the sidebar stay in place when you scroll */
+    right: 5%; /* Position the sidebar at the left edge of the page */
+    top: 50%; /* Position the sidebar at the center of the page */
+    height: 100%; /* Make the sidebar fill the full height of the page */
+    width: 5%; /* Adjust this value as needed */
+    overflow: auto; /* Add scrollbars if the content is too long to fit */
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #284B63;
+}
+
+.year {
+    color: #D9D9D9;
+    border: 2px solid #284B63; /* Adjust color as needed */
+    /* fill the inner of the circle */
+    background-color: #284B63; /* Adjust color as needed */
+    border-radius: 50%; /* Makes the border circular */
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    display: flex; /* To center the text horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.details a {
+    color: #284B63;
+    text-decoration: none;
+}
