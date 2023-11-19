@@ -4,31 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="styles_header.css">
+  <link rel="stylesheet" href="styles_root.css">
+  <title>Giuliano Giari - Portfolio</title>
 </head>
+
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p>Web Developer</p>
+    <h1>Giuliano Giari</h1> 
+    <nav>
+      <ul>
+        <a href="index.html" class="current">Home</a>
+        <a href="./documents/CV_Giuliano_Giari.pdf">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="contacts.html">Contacts</a>
+      <ul>
+    </nav>
+    <button class="toggle-dark-mode">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3232195/dark-mode-icon-md.png" alt="Toggle dark mode">
+    </button>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Welcome to my portfolio. I am a passionate web developer...</p>
-  </section>
+  <div class="profile">
+    <section class="profile-image">
+      <img src="./pictures/profile.jpg" alt="Avatar" class="avatar">
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <!-- Add project cards or details here -->
-  </section>
+    <section class="profile-links">
+      <a href="https://scholar.google.com/citations?user=6VCKLy4AAAAJ&hl=en">
+        <img src="https://www.iconarchive.com/download/i147248/academicons-team/academicons/google-scholar-square.48.png" 
+              alt="GoogleScholar"></a>
+      <a href="https://www.researchgate.net/profile/Giuliano-Giari-2">
+        <img src="https://www.iconarchive.com/download/i147248/academicons-team/academicons/researchgate-square.48.png" 
+              alt="ResearchGate"></a>
+      <a href="https://osf.io/akcg8">
+        <img src="https://www.iconarchive.com/download/i147248/academicons-team/academicons/osf-square.48.png" 
+              alt="OSF"></a>
+      <a href="https://orcid.org/0000-0002-1693-0160">
+        <img src="https://www.iconarchive.com/download/i147248/academicons-team/academicons/orcid-square.48.png" 
+              alt="Orcid"></a>
+    </section>
+  </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <!-- Add contact form or details here -->
-  </section>
-
+  <div class="about">
+    <div class="text">
+      <h2>About me</h2>
+      <p>I am a PhD Student in Cognitive Neuroscience 
+        at the Center for Mind/Brain Sciences (CIMeC) of the University of Trento 
+        (Italy) working under the supervision of Prof. Roberto Bottini.</p>
+  </div>
+  
   <footer>
-    <p>&copy; 2023 Your Name</p>
+    <p>&copy; 2023 Giuliano Giari</p>
   </footer>
 
   <script src="script.js"></script>
