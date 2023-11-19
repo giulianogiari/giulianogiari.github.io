@@ -1,0 +1,30 @@
+/* Styles for the home */
+
+.about {
+    display: flex; /* Use flexbox for a responsive layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items horizontally */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+    margin: 0 50px; /* Add some right margin to text */
+    font-family: 'Arial', Helvetica;
+  }
+  
+  .profile {
+    display: flex; /* Use flexbox */
+    flex-direction: horizontal; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  .profile-image img {
+    width: 200px; /* Set a default image width */
+    height: 200px;  /* Set a default image height */
+    margin-right: 30px; /* Add some right margin to images */
+    width: 300px; /* Set a default image width */
+    height: 300px;  /* Set a default image height */
+    border-radius: 50%; /* Make images circular */
+    margin: 0 50px;
+  }
+  .profile-links img {
+    justify-content: space-between; /* Distribute space evenly between the icons */
+  }
+  
