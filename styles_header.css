@@ -14,6 +14,10 @@ header {
     text-align: center;
     font-size: 15px;
     padding: 0 20px;
+    position: fixed; /* Fix the position of the header */
+    top: 0; /* Align the header to the top of the viewport */
+    width: 100%; /* Make the header span the full width of the viewport */
+    z-index: 1000; /* Ensure the header is above other elements */
 }
 
 /* dark mode button */
@@ -24,11 +28,25 @@ header {
     border: 0; /* Remove the default button border */
     cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
     padding: 0; /* Remove padding */
-    margin-left: 20%; 
+    position: fixed; /* Make the button stay in place when you scroll */
+    right: 20px; /* Position the button 20px from the right edge of the page */
+    top: 20px; /* Position the button 20px from the top of the page */
+    z-index: 1000; /* Ensure the button is above other elements */
+    color: #353535 
 }
+
 .toggle-dark-mode img {
     background-color: transparent;
     width: 30px;
     height: 30px;
 }
   
+/* Style the navigation menu */
+nav ul a {
+  list-style-type: none; /* Remove bullets from all nav elements */
+  color: #353535;
+  text-decoration: none; /* Remove underline */
+  text-align: center;
+  padding: 0; /* Remove padding */
+  margin-right: 20px;
+}
